@@ -548,6 +548,186 @@ nav.scrolled {
 }
 
 /* ============================================
+   SOFT SKILLS
+   ============================================ */
+.softskills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.softskill-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.softskill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background: linear-gradient(180deg, var(--primary), var(--primary-light));
+  transition: height 0.4s ease;
+}
+
+.softskill-card:hover::before {
+  height: 100%;
+}
+
+.softskill-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(220, 38, 38, 0.3);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+}
+
+.softskill-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(220, 38, 38, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.softskill-icon i {
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+
+.softskill-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.softskill-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ============================================
+   EDUCATION / FORMAÇÃO
+   ============================================ */
+.education-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.education-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.education-title i {
+  color: var(--primary);
+  font-size: 1.3rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 28px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -25px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg-dark);
+  border: 3px solid var(--primary);
+  z-index: 1;
+  transition: var(--transition);
+}
+
+.timeline-item:hover .timeline-dot {
+  background: var(--primary);
+  box-shadow: 0 0 12px var(--primary-glow);
+}
+
+.timeline-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  transition: var(--transition);
+}
+
+.timeline-item:hover .timeline-content {
+  border-color: rgba(220, 38, 38, 0.3);
+  transform: translateX(6px);
+}
+
+.timeline-date {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: rgba(220, 38, 38, 0.1);
+  padding: 3px 10px;
+  border-radius: 100px;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.timeline-content h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.timeline-content p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .education-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* ============================================
    PROJECTS
    ============================================ */
 .projects-grid {

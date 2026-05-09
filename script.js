@@ -71,7 +71,7 @@ navLinks.querySelectorAll('a').forEach(link => {
    SCROLL REVEAL
    ============================================ */
 const revealElements = document.querySelectorAll(
-  '.skill-card, .project-card, .contact-item, .about-text, .about-stats, .stat'
+  '.skill-card, .project-card, .contact-item, .about-text, .about-stats, .stat, .softskill-card, .timeline-item, .education-title'
 );
 
 revealElements.forEach(el => el.classList.add('reveal'));
