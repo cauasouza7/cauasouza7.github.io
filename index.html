@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cauã | Dev Full Stack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav id="navbar">
+  <a href="#" class="logo">CAUÃ<span>.</span></a>
+  <div class="nav-links" id="navLinks">
+    <a href="#sobre">Sobre</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </div>
+  <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-container">
+    <div class="hero-text">
+      <div class="hero-badge">🚀 Disponível para projetos</div>
+      <h1>Olá, eu sou <span class="gradient-text">Cauã</span></h1>
+      <h2 class="hero-role" id="typing"></h2>
+      <p>
+        Desenvolvedor focado em criar soluções modernas, rápidas e escaláveis.
+        Apaixonado por tecnologia e evolução constante.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projetos" class="btn btn-primary"><i class="fas fa-rocket"></i> Ver Projetos</a>
+        <a href="#contato" class="btn btn-outline"><i class="fas fa-envelope"></i> Contato</a>
+      </div>
+      <div class="hero-socials">
+        <!-- ✏️ ALTERE SEUS LINKS DE REDES SOCIAIS AQUI -->
+        <a href="https://github.com/cauasouza7" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com/seu_instagram" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://linkedin.com/in/seu_linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-image-wrapper">
+        <img src="https://api.dicebear.com/7.x/initials/svg?seed=CS&backgroundColor=dc2626&textColor=ffffff&fontSize=40" alt="Cauã">
+        <div class="hero-image-ring"></div>
+        <div class="hero-image-ring ring-2"></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="mouse"><div class="wheel"></div></div>
+  </div>
+</section>
+
+<!-- ========== SOBRE ========== -->
+<section id="sobre" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">SOBRE MIM</span>
+      <h2>Quem sou eu<span class="dot">.</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Sou um desenvolvedor Full-Stack Junior apaixonado por criar
+          experiências digitais incríveis. Tenho experiência com tecnologias
+          modernas do ecossistema web e estou sempre buscando aprender mais.
+        </p>
+        <p>
+          Meu foco é desenvolver aplicações que combinam design elegante com
+          código limpo e performático.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Tecnologias</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">2+</span>
+            <span class="stat-label">Projetos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Café ☕</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HABILIDADES ========== -->
+<section id="habilidades" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">HABILIDADES</span>
+      <h2>Tecnologias<span class="dot">.</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card" data-skill="HTML5">
+        <i class="fab fa-html5"></i>
+        <h3>HTML5</h3>
+        <div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="CSS3">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS3</h3>
+        <div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="JavaScript">
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+        <div class="skill-bar"><div class="skill-fill" style="--fill: 80%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="React">
+        <i class="fab fa-react"></i>
+        <h3>React</h3>
+        <div class="skill-bar"><div class="skill-fill" style="--fill: 70%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="Node.js">
+        <i class="fab fa-node-js"></i>
+        <h3>Node.js</h3>
+        <div class="skill-bar"><div class="skill-fill" style="--fill: 75%"></div></div>
+      </div>
+      <div class="skill-card" data-skill="Git">
+        <i class="fab fa-git-alt"></i>
+        <h3>Git</h3>
+        <div class="skill-bar"><div class="skill-fill" style="--fill: 80%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROJETOS ========== -->
+<section id="projetos" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">PORTFÓLIO</span>
+      <h2>Projetos<span class="dot">.</span></h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-placeholder"><i class="fas fa-shopping-cart"></i></div>
+          <div class="project-overlay">
+            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Loja Virtual</h3>
+          <p>E-commerce completo com carrinho de compras, filtro de produtos e integração com API de pagamento.</p>
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>CSS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-placeholder"><i class="fas fa-clipboard-list"></i></div>
+          <div class="project-overlay">
+            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Sistema de Pedidos</h3>
+          <p>Gestão de pedidos completa com banco de dados, dashboard e relatórios em tempo real.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>Node.js</span><span>SQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-placeholder"><i class="fas fa-code"></i></div>
+          <div class="project-overlay">
+            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Portfólio Pessoal</h3>
+          <p>Este site! Desenvolvido com HTML, CSS e JavaScript puro, com animações e design moderno.</p>
+          <div class="project-tags">
+            <span>HTML5</span><span>CSS3</span><span>JS</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTATO ========== -->
+<section id="contato" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">CONTATO</span>
+      <h2>Vamos conversar<span class="dot">.</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>Tem um projeto em mente ou quer trocar uma ideia? Entre em contato!</p>
+        <div class="contact-links">
+          <!-- ✏️ ALTERE SEUS LINKS DE CONTATO AQUI -->
+          <a href="https://wa.me/5500000000000" target="_blank" class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>(00) 00000-0000</span>
+            </div>
+          </a>
+          <a href="mailto:seu@email.com" class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <span>seu@email.com</span>
+            </div>
+          </a>
+          <a href="https://instagram.com/seu_instagram" target="_blank" class="contact-item">
+            <i class="fab fa-instagram"></i>
+            <div>
+              <strong>Instagram</strong>
+              <span>@seu_instagram</span>
+            </div>
+          </a>
+          <a href="https://github.com/cauasouza7" target="_blank" class="contact-item">
+            <i class="fab fa-github"></i>
+            <div>
+              <strong>GitHub</strong>
+              <span>cauasouza7</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="footer-content">
+    <a href="#" class="logo">CAUÃ<span>.</span></a>
+    <div class="footer-socials">
+      <a href="https://github.com/cauasouza7" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://instagram.com/seu_instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/5500000000000" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://linkedin.com/in/seu_linkedin" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>© 2025 Cauã — Feito com <span class="heart">❤</span> e muito café</p>
+  </div>
+</footer>
+
+<!-- ========== WHATSAPP FLOAT ========== -->
+<a href="https://wa.me/5500000000000" target="_blank" class="whatsapp-float" aria-label="Chat no WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
